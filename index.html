@@ -1,0 +1,482 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1024, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div id="overlay" class="overlay"></div>
+    <header>
+      <div class="header-shopName">
+        <img src="assets/menu.svg" alt="" />
+        <h1 class="showHeader">
+          ТОВАРЫ<br />
+          И ТОЧКА
+        </h1>
+        <h1 class="hiddenHeader">ТОВАРЫ И ТОЧКА</h1>
+        <img src="assets/lupa.svg" alt="" class="lupa" />
+      </div>
+      <div class="header-search">
+        <div>
+          <input type="text" name="search" id="search" placeholder="Я ищу..." />
+          <img src="assets/search.svg" alt="" />
+        </div>
+      </div>
+      <div class="header-profileCart">
+        <div class="profile">
+          <img src="assets/profile.svg" alt="" />
+          <p>Профиль</p>
+        </div>
+        <div>
+          <img src="assets/cart.svg" alt="" />
+          <p>Корзина</p>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section>
+        <h1>Корзина</h1>
+        <div class="chooseAll">
+          <div>
+            <img src="assets/checked.svg" alt="" id="selectAllCheckbox" />
+            <p>Выбрать все</p>
+          </div>
+          <img src="assets/close.svg" alt="" id="closeButton" />
+        </div>
+        <hr />
+        <div class="cartItems">
+          <div class="item">
+            <img src="assets/checked.svg" alt="" class="item2checked" />
+            <img src="assets/item1.svg" alt="" />
+            <div class="item1-info">
+              <div class="itemPriceMobile">
+                <h1>522 сом</h1>
+                <p><span>1051 сом</span></p>
+              </div>
+              <p class="itemName">Футболка UZcotton мужская</p>
+              <div class="itemParams">
+                <p>Цвет: белый</p>
+                <p>Размер: 56</p>
+              </div>
+              <p class="prodInfo">Коледино WB</p>
+              <div>
+                <p class="prodInfo">ООО Вайлдберриз</p>
+                <img src="assets/info.svg" alt="" />
+              </div>
+            </div>
+            <div class="dispflex">
+              <div class="itemQuantity2">
+                <p>-</p>
+                <p>1</p>
+                <p>+</p>
+              </div>
+              <p class="leftQuant">Осталось 2 шт.</p>
+              <div class="dfBut1">
+                <img src="assets/addToFav.svg" alt="" />
+                <img src="assets/delete.svg" alt="" />
+              </div>
+            </div>
+            <div class="itemPrice">
+              <h1>522 сом</h1>
+              <p><span>1051 сом</span></p>
+            </div>
+          </div>
+          <hr class="hrMobile" />
+          <div class="item">
+            <img src="assets/checked.svg" alt="" class="item2checked" />
+            <img src="assets/item2.svg" alt="" class="item2photo" />
+            <div class="item1-info">
+              <div class="itemPrice2Mobile">
+                <h1>2 100 047 сом</h1>
+                <p><span>2 300 047 сом</span></p>
+              </div>
+              <p class="itemName2">
+                Силиконовый чехол картхолдер (отверстия) для карт, прозрачный кейс бампер на Apple
+                iPhone XR, MobiSafe
+              </p>
+              <div class="itemParams">
+                <p>Цвет: прозрачный</p>
+              </div>
+              <p class="prodInfo">Коледино WB</p>
+              <div>
+                <p class="prodInfo">ООО Мегапрофстиль</p>
+                <img src="assets/info.svg" alt="" />
+              </div>
+            </div>
+            <div class="dispflex">
+              <div class="itemQuantity2">
+                <p>-</p>
+                <p>200</p>
+                <p>+</p>
+              </div>
+              <div class="dfBut1">
+                <img src="assets/addToFav.svg" alt="" />
+                <img src="assets/delete.svg" alt="" />
+              </div>
+            </div>
+            <div class="itemPrice2">
+              <h1>2 100 047 сом</h1>
+              <p><span>2 300 047 сом</span></p>
+            </div>
+          </div>
+          <hr class="hrMobile" />
+          <div class="item">
+            <img src="assets/checked.svg" alt="" class="item2checked" />
+            <img src="assets/item3.svg" alt="" class="item2photo" />
+            <div class="item1-info">
+              <div class="itemPrice2Mobile">
+                <h1>494 сом</h1>
+                <p><span>950 сом</span></p>
+              </div>
+              <p class="itemName2">
+                Карандаши цветные Faber-Castell "Замок", набор 24 цвета, заточенные, шестигранные,
+                Faber-Castell
+              </p>
+              <p class="prodInfo">Коледино WB</p>
+              <div>
+                <p class="prodInfo">ООО Вайлдберриз</p>
+                <img src="assets/info.svg" alt="" />
+              </div>
+            </div>
+            <div class="dispflex">
+              <div class="itemQuantity2">
+                <p>-</p>
+                <p>2</p>
+                <p>+</p>
+              </div>
+              <p class="leftQuant">Осталось 2 шт.</p>
+              <div class="dfBut1">
+                <img src="assets/addToFav.svg" alt="" />
+                <img src="assets/delete.svg" alt="" />
+              </div>
+            </div>
+            <div class="itemPrice2">
+              <h1>494 сом</h1>
+              <p><span>950 сом</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="outOfStock">
+          <p>Отсутствуют · 3 товара</p>
+          <img src="assets/close.svg" alt="" />
+        </div>
+        <hr />
+        <div class="outOfStockItems">
+          <div class="itemOutStock">
+            <div class="df">
+              <img src="assets/gray1item.svg" alt="" />
+              <div class="item1-info">
+                <p class="itemName">Футболка UZcotton мужская</p>
+                <div class="itemParams">
+                  <p>Цвет: белый</p>
+                  <p>Размер: 56</p>
+                </div>
+              </div>
+            </div>
+            <div class="dfBut">
+              <img src="assets/addToFav.svg" alt="" />
+              <img src="assets/delete.svg" alt="" />
+            </div>
+          </div>
+          <div class="itemOutStock">
+            <div class="df">
+              <img src="assets/gray2item.svg" alt="" class="item2photo" />
+              <div class="item1-info">
+                <p class="itemName2">
+                  Силиконовый чехол картхолдер (отверстия) для карт, прозрачный кейс бампер на Apple
+                  iPhone XR, MobiSafe
+                </p>
+                <div class="itemParams">
+                  <p>Цвет: прозрачный</p>
+                </div>
+              </div>
+            </div>
+            <div class="dfBut">
+              <img src="assets/addToFav.svg" alt="" />
+              <img src="assets/delete.svg" alt="" />
+            </div>
+          </div>
+          <div class="itemOutStock">
+            <div class="df">
+              <img src="assets/gray3item.svg" alt="" class="item2photo" />
+              <div class="item1-info">
+                <p class="itemName2">
+                  Карандаши цветные Faber-Castell "Замок", набор 24 цвета, заточенные, шестигранные,
+                  Faber-Castell
+                </p>
+              </div>
+            </div>
+            <div class="dfBut">
+              <img src="assets/addToFav.svg" alt="" />
+              <img src="assets/delete.svg" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="deliveryType">
+          <div class="deliveryModal" id="deliveryModal">
+            <h2>Способ доставки</h2>
+            <div class="variantsDelivery">
+              <div class="deliveryOption" onclick="showDeliveryContent('pickupPoints')">
+                <p>Пункты выдачи</p>
+              </div>
+              <div class="deliveryOption" onclick="showDeliveryContent('courierDelivery')">
+                <p>Курьером</p>
+              </div>
+            </div>
+            <div class="deliveryContent" id="pickupPoints">
+              <h2>Мои адреса</h2>
+              <div>
+                <input type="radio" name="deliveryAddress" id="firstAddress" />
+                <label for="firstAddress"
+                  >г. Бишкек, микрорайон Джал, улица Ахунбаева Исы, д. 67/1</label
+                >
+              </div>
+              <div>
+                <input type="radio" name="deliveryAddress" id="secondAddress" />
+                <label for="secondAddress"
+                  >г. Бишкек, микрорайон Джал, улица Ахунбаева Исы, д. 67/1</label
+                >
+              </div>
+              <div>
+                <input type="radio" name="deliveryAddress" id="thirdAddress" />
+                <label for="thirdAddress">г. Бишкек, улица Табышалиева, д. 57</label>
+              </div>
+            </div>
+
+            <div class="deliveryContent" id="courierDelivery">
+              <h2>Мои адреса</h2>
+              <div>
+                <input type="radio" name="deliveryAddress" id="firstAddressCourier" />
+                <label for="firstAddressCourier">Бишкек, улица Табышалиева, 57</label>
+              </div>
+              <div>
+                <input type="radio" name="deliveryAddress" id="secondAddressCourier" />
+                <label for="secondAddressCourier">Бишкек, улица Жукеева-Пудовкина, 77/1</label>
+              </div>
+              <div>
+                <input type="radio" name="deliveryAddress" id="thirdAddressCourier" />
+                <label for="thirdAddressCourier"
+                  >Бишкек, микрорайон Джал, улица Ахунбаева Исы, 67/1</label
+                >
+              </div>
+            </div>
+            <button onclick="closeDeliveryModal()">Выбрать</button>
+          </div>
+          <div class="header">
+            <h1>Способ доставки</h1>
+            <p onclick="openDeliveryModal()">Изменить</p>
+          </div>
+          <div class="deliveryMainInfo">
+            <div class="left">
+              <p class="post">Пункт выдачи</p>
+              <p class="hiddenDelInfo">
+                Бишкек, улица Ахматбека Суюмбаева, 12/1<br /><span
+                  ><img src="assets/star.svg" /> 4.99 Ежедневно с 10 до 21</span
+                >
+              </p>
+              <p>Стоимость доставки</p>
+              <p class="freeDel hiddenDelInfo">Бесплатно</p>
+              <p class="date">5—6 февраля</p>
+              <div class="deliveryDateImages hiddenDelInfo">
+                <img src="assets/item1.svg" alt="" width="40" height="56" />
+                <img src="assets/item2.svg" alt="" width="40" height="56" />
+                <img src="assets/item3.svg" alt="" width="40" height="56" />
+              </div>
+              <p>7—8 февраля</p>
+              <img class="bot hiddenDelInfo" src="assets/item2.svg" alt="" width="40" height="56" />
+            </div>
+            <div class="right">
+              <p>
+                Бишкек, улица Ахматбека Суюмбаева, 12/1<br /><span
+                  ><img src="assets/star.svg" /> 4.99 Ежедневно с 10 до 21</span
+                >
+              </p>
+              <p class="freeDel">Бесплатно</p>
+              <div class="deliveryDateImages">
+                <img src="assets/item1.svg" alt="" width="40" height="56" />
+                <img src="assets/item2.svg" alt="" width="40" height="56" />
+                <img src="assets/item3.svg" alt="" width="40" height="56" />
+              </div>
+              <img class="bot" src="assets/item2.svg" alt="" width="40" height="56" />
+            </div>
+          </div>
+          <div class="deliveryFooter">
+            <img src="assets/check.svg" alt="" />
+            <p>Обратная доставка товаров на склад при отказе — <span>бесплатно</span></p>
+          </div>
+        </div>
+        <div class="paymentType">
+          <div class="header">
+            <h1>Способ оплаты</h1>
+            <p onclick="openModal()">Изменить</p>
+          </div>
+          <div class="modal" id="modal">
+            <div class="header">
+              <h1>Способ оплаты</h1>
+              <p onclick="closeModal()">X</p>
+            </div>
+            <div>
+              <input type="radio" id="mir" name="paymentMethod" value="mir" />
+              <label for="mir">
+                <div>
+                  <img src="assets/mirlogo.svg" alt="" />
+                  <p>1234 56•• •••• 1234</p>
+                </div>
+              </label>
+            </div>
+            <div>
+              <input type="radio" id="visa" name="paymentMethod" value="visa" />
+              <label for="visa">
+                <div>
+                  <img src="assets/visa.svg" alt="" />
+                  <p>1234 56•• •••• 1234</p>
+                </div>
+              </label>
+            </div>
+            <div>
+              <input type="radio" id="mastercard" name="paymentMethod" value="mastercard" />
+              <label for="mastercard">
+                <div>
+                  <img src="assets/mastercard.svg" alt="" />
+                  <p>1234 56•• •••• 1234</p>
+                </div>
+              </label>
+            </div>
+            <div>
+              <input type="radio" id="lomastercard" name="paymentMethod" value="lomastercard" />
+              <label for="lomastercard">
+                <div>
+                  <img src="assets/lomastercard.svg" alt="" />
+                  <p>1234 56•• •••• 1234</p>
+                </div>
+              </label>
+            </div>
+            <button onclick="selectPayment()">Выбрать</button>
+          </div>
+          <div class="cardInfo" id="selectedCardInfo">
+            <img src="assets/mirlogo.svg" alt="" width="32" height="32" />
+            <p class="cardNumber">1234 12•• •••• 1234</p>
+            <p>01/30</p>
+          </div>
+          <p class="willPay">Спишем оплату с карты при получении</p>
+        </div>
+        <div class="recepientInfo">
+          <h1>Получатель</h1>
+          <div class="fio">
+            <div class="oneInput">
+              <input
+                class="fioInput"
+                id="firstName"
+                name="firstName"
+                value=""
+                placeholder="Имя"
+                onblur="validateField('firstName', 'firstNameError', 'Укажите имя')"
+              />
+              <div id="firstNameError" class="error"></div>
+            </div>
+            <div class="oneInput">
+              <input
+                class="fioInput"
+                id="lastName"
+                name="lastName"
+                value=""
+                placeholder="Фамилия"
+                onblur="validateField('lastName', 'lastNameError', 'Введите фамилию')"
+              />
+              <div id="lastNameError" class="error"></div>
+            </div>
+          </div>
+          <div class="otherInfo">
+            <div class="oneInput">
+              <input
+                class="otherInfoInput"
+                type="email"
+                name="mail"
+                id="email"
+                placeholder="Почта"
+                onblur="validateField('email', 'emailError', 'Укажите электронную почту', isValidEmail)"
+              />
+              <div id="emailError" class="error"></div>
+            </div>
+            <div class="oneInput">
+              <input
+                class="otherInfoInput"
+                type="tel"
+                name="phone"
+                id="phone"
+                placeholder="Телефон"
+                onblur="validateField('phone', 'phoneError', 'Укажите номер телефона', isValidPhone)"
+              />
+              <div id="phoneError" class="error"></div>
+            </div>
+            <div class="oneInput">
+              <input
+                class="otherInfoInput"
+                type="text"
+                name="inn"
+                id="inn"
+                placeholder="ИНН"
+                onblur="validateField('inn', 'innError', 'Укажите ИНН', isValidInn)"
+              />
+              <div id="innError" class="error"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <aside>
+        <div class="totalPrice">
+          <div class="left-totalPrice">
+            <h1>Итого</h1>
+            <p>203 товара</p>
+            <p>Скидка</p>
+            <p>Доставка</p>
+          </div>
+          <div class="right-totalPrice">
+            <h1>2 101 063 сом</h1>
+            <p>2 302 048 сом</p>
+            <p>−200 985 сом</p>
+            <p>Бесплатно</p>
+          </div>
+        </div>
+        <div class="deliveryInfo">
+          <div class="flex">
+            <h1>Доставка в пункт выдачи</h1>
+            <img src="assets/pen.svg" alt="" onclick="openDeliveryModal()" />
+          </div>
+          <p>Бишкек, улица Ахматбека Суюмбаева, 12/1</p>
+          <p class="bottom-dashed">5–8 фев</p>
+        </div>
+        <div class="reverseDelivery">
+          <img src="assets/check.svg" alt="" />
+          <p>Обратная доставка товаров на склад при отказе — <span>бесплатно</span></p>
+        </div>
+        <div class="paymentmethod">
+          <h2>Оплата картой</h2>
+          <img src="assets/pen.svg" alt="" onclick="openModal()" />
+        </div>
+        <div class="cardInfo">
+          <img src="assets/mirlogo.svg" alt="" />
+          <p>1234 12•• •••• 1234</p>
+        </div>
+        <div class="payCheck">
+          <div>
+            <img
+              src="assets/unchecked.svg"
+              alt=""
+              onclick="togglePaymentMethod()"
+              id="paymentCheck"
+            />
+            <p>Списать оплату сразу</p>
+          </div>
+          <p class="payOnDelivery">Списать оплату с карты при получении</p>
+        </div>
+        <div class="orderButton" id="orderButton">Заказать</div>
+        <input type="checkbox" id="cb2" />
+        <label for="cb2">Соглашаюсь с правилами пользования торговой площадкой и возврата</label>
+      </aside>
+    </main>
+    <footer></footer>
+  </body>
+</html>

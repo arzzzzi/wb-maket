@@ -1,0 +1,941 @@
+body {
+    width: 100%;
+        background-color: #6725A8;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+header {
+    background-color: #6725A8;
+    height: 88px;
+    display: flex;
+    justify-content: space-between;
+}
+
+header .header-shopName{
+    align-items: center;
+    display: flex;
+    padding: 12px 22px 16px 24px;
+}
+.paymentType .header p {
+    cursor: pointer;
+}
+
+.deliveryType .header p {
+    cursor: pointer;
+}
+
+.modal .header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-shopName h1 {
+    margin-left: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 28px;
+    color: white;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.32px;
+}
+.modal div {
+    display: flex;
+}
+
+.modal h1 {
+    font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: 28px;
+}
+
+.modal button {
+    cursor: pointer;
+    margin-top: 140px;
+    border: none;
+    width: 164px;
+    color: white;
+    display: flex;
+    height: 44px;
+    padding: 0px 48px 5px 48px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background:  #CB11AB;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.deliveryModal button {
+    cursor: pointer;
+    margin-top: 140px;
+    border: none;
+    width: 164px;
+    color: white;
+    display: flex;
+    height: 44px;
+    padding: 0px 48px 5px 48px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background:  #CB11AB;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.deliveryContent h2 {
+    font-size: 13px;
+font-style: normal;
+font-weight: 700;
+
+}
+
+.variantsDelivery {
+    display: flex;
+    justify-content: space-around;
+}
+
+.deliveryOption {
+    border-radius: 24px;
+border: 2px solid #CB11AB;
+width: 224px;
+font-size: 13px;
+font-style: normal;
+font-weight: 700;
+text-align: center;
+}
+
+.header-profileCart {
+    display: flex;
+    align-items: center;
+    padding-right: 17px;
+}
+
+ .profile {
+    padding-top: 5px;
+    padding-right: 36px;
+}
+
+.header-profileCart p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-size: 13px;
+    line-height: 6px;
+}
+
+.header-search{
+    padding: 16px 0;
+    align-self: center
+}
+
+.header-search img {
+    height: 24px;
+    width: 24px;
+    align-self: center;
+    padding-right: 20px;
+}
+
+
+.header-search div {
+    width: 550px;
+    height: 48px;
+    border-radius: 36px;
+    background-color: #8551b9;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-search input {
+    margin-left: 20px;
+    width: 520px;
+    height: 48px;
+    border-radius: 36px;
+    background-color: #8551b9;
+    border: none;
+    outline: none;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+main {
+    border-radius: 24px;
+    height: fill;
+    background-color: #f6f6fa;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+aside {
+    width: 258px;
+    padding: 0 24px 24px 24px;
+    border-radius: 16px;
+    border: 1px solid #d9d9dd;
+    background-color: white;
+    margin: 20px 24px;
+    height: fit-content;
+}
+
+.totalPrice{
+    display: flex;
+    justify-content: space-between;
+}
+
+.totalPrice h1 {
+    font-size: 24px;
+    line-height: 22px;
+    font-weight: 700;
+    text-align: left;
+}
+
+.totalPrice p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 4px;
+}
+
+.right-totalPrice p, .right-totalPrice h1 {
+    text-align: right;
+}
+.deliveryInfo .flex {
+    display: flex;
+    justify-content: space-between;
+    line-height: 0px;
+    margin-top: 24px;
+}
+
+.deliveryInfo p {
+    font-size: 13px;
+    line-height: 6px;
+}
+
+.bottom-dashed {
+    text-decoration: underline dashed;
+    color: #CB11AB;
+}
+
+.flex h1 {
+    font-size: 16px;
+
+}
+
+.deliveryFooter {
+    display: flex;
+    border-radius: 8px;
+    margin-top: 24px;
+}
+
+.deliveryFooter p {
+    font-size: 13px;
+    line-height: 16px;
+    margin-left: 13px;
+}
+
+.deliveryFooter span {
+    text-decoration: underline dashed;
+    color: #0CB477;
+}
+
+.reverseDelivery {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 8px;
+    background-color: #f6f6fa;
+    padding-left: 8px;
+    margin: 18px 0px;
+}
+
+.reverseDelivery p {
+    font-size: 13px;
+    line-height: 16px;
+    margin-left: 13px;
+}
+
+.reverseDelivery span {
+    text-decoration: underline dashed;
+    color: #0CB477;
+}
+
+.paymentmethod {
+    display: flex;
+    justify-content: space-between;
+}
+
+.paymentmethod h2 {
+    font-size: 16px;
+    line-height: 0;
+}
+
+.cardInfo {
+    display: flex;
+    line-height: 0;
+}
+
+.cardInfo p {
+    font-size: 13px;
+}
+
+.payCheck {
+   border-radius: 8px;
+    background-color: #f6f6fa; 
+    padding: 6px;
+    line-height: 0;
+    margin-top: 16px;
+}
+
+.payCheck div {
+    display: flex;
+}
+
+.payCheck div p {
+    margin-left: 10px;
+}
+
+.payCheck p {
+    font-size: 13px;
+
+}
+aside label {
+    font-size: 13px;
+}
+.payCheck div img {
+    cursor: pointer;
+}
+
+.orderButton {
+    background-color: #CB11AB;
+    border-radius: 8px;
+    color: white;
+    height: 44px;
+    text-align: center;
+    align-items: center;
+    margin-top: 24px;
+    line-height: 36px;
+    margin-bottom: 16px;
+}
+section {
+    margin-left: 24px;
+    width:  640px;
+}
+
+.chooseAll {
+    display: flex;
+    justify-content: space-between;
+}
+
+.item {
+    display: flex;
+}
+
+.item img {
+    margin-right: 12px;
+}
+.itemQuantity {
+    display: flex;
+    background-color: white;
+    width: 100px;
+    height: 44px;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 8px;
+    margin-left: 34px;
+    border-radius: 8px;
+}
+.itemQuantity2{
+    display: flex;
+    background-color: white;
+    width: 100px;
+    height: 44px;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 18px;
+    margin-left: 34px;
+    border-radius: 8px;
+}
+
+.itemName {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.itemName2 {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.itemParams p {
+    font-size: 13px;
+    margin-right: 10px;
+}
+
+.itemPrice h1 {
+    font-size: 20px;
+    line-height: 8px;
+}
+
+.itemPrice2 h1 {
+    font-size: 16px;
+    line-height: 8px;
+}
+
+.itemPrice2 {
+    margin-top: 12px;
+    margin-left: auto;
+}
+
+.itemPrice2 p {
+    color: #9797AF;
+    font-size: 13;
+    text-decoration: underline dashed;
+    text-align: end;
+    line-height: 12px;
+}
+
+.itemPrice2 span {
+    text-decoration: line-through;
+}
+
+.item2photo {
+    align-self: self-start;
+    margin-top: 20px;
+}
+.item2checked {
+    align-self: flex-start;
+    margin-top: 56px;
+}
+.itemPrice p {
+    color: #9797AF;
+    font-size: 13;
+    text-decoration: underline dashed;
+    text-align: end;
+    line-height: 12px;
+}
+
+.itemPrice span {
+    text-decoration: line-through;
+}
+.itemPrice .itemPrice2 {
+    font-size: 16px;
+}
+
+.itemPrice {
+    margin-left: auto;
+}
+.item1-info div {
+    display: flex;
+}
+
+.item1-info{
+    line-height: 0;
+    width: 250px;
+}
+
+.prodInfo {
+    font-size: 13px;
+    color: #9797AF;
+}
+
+.chooseAll p {
+    margin-left: 10px;
+}
+
+.chooseAll div {
+    display: flex;
+}
+
+.outOfStock p {
+    font-size: 16px;
+    font-weight: 600;
+}
+.outOfStock {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.itemOutStock img {
+    margin-right: 16px;
+    margin-top: 10px;
+}
+
+.outOfStockItems p {
+    color: #9797AF;
+}
+
+.leftQuant {
+    font-size: 13px;
+    font-weight: 400;
+    color: #FF3B30;
+    text-align: center;
+    line-height: 0;
+    margin-left: 20px;
+}
+
+.itemOutStock {
+    display: flex;
+}
+.itemOutStock .df {
+    display: flex;
+}
+
+.dfBut {
+    display: flex;
+    align-self: baseline;
+    margin-left: 105px;
+}
+
+.dfBut1 {
+    display: flex;
+    align-self: baseline;
+    margin-left: 80px;
+    margin-top: 20px;
+}
+
+.df .itemName {
+    width: 309px;
+}
+
+.df .itemName2 {
+    width: 309px;
+}
+
+.deliveryType {
+    border-radius: 16px;
+    width: 638px;
+    background-color: white;
+    padding: 16px 24px 24px 24px;
+    margin-top: 40px;
+}
+.deliveryType h1 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 0;
+}
+
+.recepientInfo h1 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 0;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+    width: 100%;
+}
+
+.modal label div {
+    display: flex;
+}
+
+.deliveryModal label div {
+    display: flex;
+}
+
+.deliveryModal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 16px 24px 24px 24px;
+    z-index: 2;
+    width: 500px;
+    border-radius: 16px;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 16px 24px 24px 24px;
+    z-index: 2;
+    width: 400px;
+    border-radius: 16px;
+}
+
+.hidden {
+    display: none;
+}
+
+.itemQuantity2 p {
+    cursor: pointer;
+}
+.recepientInfo {
+    border-radius: 16px;
+    width: 638px;
+    background-color: white;
+    padding: 16px 24px 24px 24px;
+    margin-top: 16px;
+        margin-bottom: 50px;
+
+}
+
+.fioInput{
+    width: 283px;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.20);
+    background-color: transparent;
+    color: inherit;
+    outline: none;
+    margin-right: 24px;
+    margin-top: 34px;
+    font-size: 16px;
+}
+
+.fio {
+    display: flex;
+}
+
+.otherInfo {
+    display: flex;
+}
+
+.otherInfo label {
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+}
+
+.otherInfoInput {
+    width: 180px;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.20);
+    background-color: transparent;
+    color: inherit;
+    outline: none;
+    margin-right: 24px;
+    margin-top: 34px;
+    font-size: 16px;
+
+}
+
+
+.input-error {
+    border-bottom: 1px solid red;
+    color: red;
+}
+.deliveryType .header p {
+    color:  #CB11AB;
+text-align: right;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: 0;
+}
+
+.deliveryMainInfo .left p {
+    color: #000;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: 24px; /* 150% */
+}
+
+.deliveryMainInfo .left {
+    margin-right: 32px;
+}
+
+.deliveryMainInfo {
+    display: flex;
+}
+
+.deliveryMainInfo .right p {
+    color: #000;
+font-family: Segoe UI;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px;
+}
+
+.deliveryMainInfo .right span {
+    font-family: Segoe UI;
+font-size: 13px;
+font-style: normal;
+font-weight: 400;
+line-height: 16px; 
+}
+
+.freeDel {
+    margin-top: 20px;
+}
+
+.right .bot {
+    margin-top: 16px;
+}
+
+.deliveryDateImages {
+    display: flex;
+}
+
+.deliveryDateImages img {
+    margin-right: 8px;
+}
+
+.post {
+    height: 44px;
+}
+
+.date {
+    height: 56px;
+}
+
+.paymentType {
+    border-radius: 16px;
+    width: 638px;
+    background-color: white;
+    padding: 16px 24px 24px 24px;
+    margin-top: 16px;
+}
+.paymentType h1 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 0;
+}
+
+.paymentType .header p {
+    color:  #CB11AB;
+    text-align: right;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 0;
+}
+
+.paymentType .header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.paymentType .cardInfo p {
+    font-size: 16px;
+}
+
+.paymentType .cardInfo {
+    margin-top: 16px;
+    margin-bottom: 8px;
+}
+
+.deliveryType .header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.willPay {
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    color: #9797AF;
+}
+
+.cardNumber {
+    margin-left: 8px;
+    margin-right: 12px;
+}
+
+section h1 {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.lupa {
+    display: none;
+}
+.hiddenHeader {
+    display: none;
+}
+footer {
+    height: 68px;
+}
+.hrMobile {
+    display: none;
+}
+.hiddenDelInfo{
+    display: none;
+}
+
+@media screen and (max-width: 1024px) {
+    .showHeader {
+        display: none;
+    }
+
+    .hiddenHeader {
+        display: block;
+    }
+
+    .lupa {
+        display: flex;
+    }
+
+    .header-search {
+        display: none;
+    }
+
+    .header-profileCart {
+        display: none;
+    }
+
+    .header-shopName {
+        display: flex;
+            width: 100%;
+    justify-content: space-between;
+    }
+
+    main {
+        display: block;
+    }
+
+    body {
+        margin: auto;
+    }
+
+    aside {
+        background: #f6f6fa;
+        border: none;
+        width: 320px;
+    }
+    .fio {
+        display: block;
+    }
+    .otherInfo {
+        display: block;
+    }
+
+    .fioInput {
+        width: 100%;
+    }
+    .otherInfoInput {
+        width: 100%;
+    }
+    .recepientInfo {
+        width: 320px;
+    }
+    .paymentType {
+        width: 320px;
+    }
+    .modal {
+   
+    width: 100%;
+    height: 100%;
+    }
+    .hiddenDelInfo{
+        display: block;
+    }
+    .deliveryMainInfo .right {
+        display: none;
+    }
+
+    .deliveryType {
+    width: 320px}
+    
+    .itemOutStock {
+        display: block;
+    }
+
+    .dfBut {
+        margin-left: 300px;
+    }
+
+    section {
+        width: 368px;
+    }
+    .leftQuant {
+        line-height: 10px;
+            margin-top: 28px;
+
+    }
+
+    .item {
+        display: block;
+        position: relative;
+    }
+
+    .dispflex {
+        display: flex;
+    }
+    .hrMobile {
+        display: block;
+    }
+
+    .itemPrice {
+        display: none;
+    }
+
+    .itemPrice2{
+        display: none;
+    }
+
+    .item2checked {
+        position: absolute;
+        top: -32px;
+        left: 2px;
+    }
+
+    .itemPriceMobile p {
+    color: #9797AF;
+    font-size: 13;
+    text-decoration: underline dashed;
+    text-align: end;
+    line-height: 12px;
+}
+
+.itemPriceMobile span {
+    text-decoration: line-through;
+}
+.itemPriceMobile .itemPrice2Mobile {
+    font-size: 16px;
+}
+
+.itemPriceMobile {
+    margin-left: auto;
+}
+
+.itemPriceMobile h1 {
+    font-size: 20px;
+    line-height: 8px;
+}
+
+.itemPrice2Mobile h1 {
+    font-size: 16px;
+    line-height: 8px;
+}
+
+.itemPrice2Mobile {
+    margin-top: 12px;
+    margin-left: auto;
+}
+
+.itemPrice2Mobile p {
+    color: #9797AF;
+    font-size: 13;
+    text-decoration: underline dashed;
+    text-align: end;
+    line-height: 12px;
+}
+
+.itemPrice2Mobile span {
+    text-decoration: line-through;
+}
+}
